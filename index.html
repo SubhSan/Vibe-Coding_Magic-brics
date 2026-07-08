@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>MagicBricks Bhubaneswar | Search Properties in Bhubaneswar</title>
+  <meta name="description" content="Search the best rental properties, apartments, and villas in Bhubaneswar. Find properties to buy or rent in Patia, Nayapalli, Jayadev Vihar, and Khandagiri.">
+  <meta name="keywords" content="Bhubaneswar Real Estate, Flats in Patia, Rent in Bhubaneswar, Buy Property Bhubaneswar, MagicBricks Bhubaneswar">
+  <meta name="author" content="MagicBricks Bhubaneswar Team">
+
+  <!-- Core Theme CSS Stylesheet -->
+  <link rel="stylesheet" href="./src/index.css">
+
+  <!-- Google Fonts - Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Load React & ReactDOM Production CDNs -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Load Babel Standalone to compile JSX in real-time -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  
+  <!-- React App Root Container -->
+  <div id="root">
+    <!-- Fallback loading indicator displayed before React loads -->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; font-family: 'Plus Jakarta Sans', sans-serif; color: #0f172a; background-color: #f8fafc;">
+      <div style="width: 48px; height: 48px; border: 4px solid #cbd5e1; border-top: 4px solid #3b82f6; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 1rem;"></div>
+      <p style="font-weight: 600; font-size: 1.1rem;">Loading Bhubaneswar Properties...</p>
+      <style>
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
+  </div>
+
+  <!-- Load properties database first -->
+  <script type="text/babel" src="./src/data/properties.js"></script>
+
+  <!-- Load React Components and Main App view -->
+  <script type="text/babel" src="./src/App.jsx"></script>
+
+  <!-- Mount React App once files are executed -->
+  <script type="text/babel">
+    const mountApp = () => {
+      if (window.App && window.ReactDOM) {
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<window.App />);
+      } else {
+        // Fallback buffer in case of execution delays
+        setTimeout(mountApp, 50);
+      }
+    };
+    mountApp();
+  </script>
+
+</body>
+</html>
