@@ -67,3 +67,6 @@ python -m http.server 8000
 
 Once running, navigate to:
 👉 **[http://localhost:8000](http://localhost:8000)**
+
+<img width="800" height="800" alt="Screenshot 2026-07-08 195048" src="https://github.com/user-attachments/assets/9c01c3f2-7565-4e30-89fc-1258c3749d3f" />
+
