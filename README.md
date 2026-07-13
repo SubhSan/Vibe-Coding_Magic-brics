@@ -73,5 +73,11 @@ Once running, navigate to:
 
 
 
+
 <img width="1872" height="872" alt="Screenshot 2026-07-08 195125" src="https://github.com/user-attachments/assets/9e6f2a25-04dd-4381-ae30-ed722d82f59d" />
+
+
+
+
+<img width="1872" height="872" alt="Screenshot 2026-07-08 195159" src="https://github.com/user-attachments/assets/6b15f400-012e-4fef-b15b-eff7e7fdc343" />
 
